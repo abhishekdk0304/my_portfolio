@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet:wght@400;600&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portpolio </title>
+    <style>
+        
+        * {
+            margin: 0;
+        }
+
+        .home {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgb(164, 164, 255), rgba(245, 150, 150, 0.333), rgb(189, 238, 189));
+
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            animation: box1 2s ease-in alternate-reverse infinite;
+        }
+
+        @keyframes box1 {
+            from {
+                top: -100px;
+                left: -100px;
+                background-image: linear-gradient(rgb(131, 242, 146), pink);
+                box-shadow: 1px 1px 100px rgb(6, 140, 185);
+
+
+            }
+
+            to {
+                left: 900px;
+                top: 500px;
+                background-image: linear-gradient(rgb(131, 242, 146), pink);
+                rotate: 360deg;
+
+                box-shadow: 1px 1px 100px rgb(131, 242, 146);
+
+            }
+
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            animation: box2 2s ease-in alternate-reverse infinite;
+
+        }
+
+        @keyframes box2 {
+            from {
+                left: 1300px;
+                top: -100px;
+                background-image: linear-gradient(rgb(131, 242, 146), pink);
+                box-shadow: 1px 1px 100px rgb(131, 242, 146);
+
+            }
+
+            to {
+                top: 500px;
+                left: 900px;
+                background-image: linear-gradient(rgb(131, 242, 146), pink);
+                rotate: 360deg;
+                box-shadow: 1px 1px 100px rgb(6, 140, 185);
+            }
+
+
+
+
+
+        }
+
+        .home nav {
+            height: 60px;
+            width: 500px;
+            display: flex;
+            position: fixed;
+            right: 0;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 50px;
+            font-family: 'Borel', cursive;
+            font-family: 'Handjet', cursive;
+
+        }
+
+        .main .name {
+            position: absolute;
+            left: 510px;
+            top: 360px;
+            transform: translate(-15px, -50px);
+
+        }
+
+        .name h1 {
+            color: black;
+            font-size: 60px;
+            width: 600px;
+
+        }
+
+        .name h2 {
+            color: blueviolet;
+            font-size: 50px;
+            width: 500px;
+            font-family: 'Borel', cursive;
+            font-family: 'Handjet', cursive;
+
+        }
+
+        .down {
+
+            position: absolute;
+            top: 580px;
+            left: 800px;
+            animation: bounce 1s ease infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                top: 580px;
+                left: 700px;
+            }
+
+            to {
+                top: 600px;
+                left: 700px;
+
+            }
+        }
+
+        .about {
+            height: 140vh;
+            width: 100%;
+            justify-content: center;
+            background-image: linear-gradient(rgb(130, 255, 157), rgba(239, 255, 137, 0.333), rgb(155, 242, 247));
+        }
+
+        .about h1 {
+            position: absolute;
+            top: 830px;
+            left: 650px;
+            font-size: 50px;
+            font-family: 'Borel', cursive;
+            color: rgb(9, 16, 16);
+        }
+
+        .about img {
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            position: absolute;
+            left: 600px;
+            top: 890px;
+        }
+
+        .info {
+            height: 100px;
+            width: 600px;
+            position: absolute;
+            top: 1250px;
+            left: 450px;
+            text-align: center;
+
+        }
+
+        .info p {
+            color: #000;
+            font-size: large;
+            font-family: 'Borel', cursive;
+
+        }
+
+        .skil {
+            height: 500px;
+            width: 600px;
+            position: absolute;
+            top: 1450px;
+            left: 450px;
+            text-align: center;
+
+
+        }
+
+        .skil h2 {
+            margin-bottom: 20px;
+            font-family: 'Borel', cursive;
+            font-size: 40px;
+
+        }
+
+        .wrapper {
+            position: relative;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(rgb(216, 11, 52), #0774f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .wrapper span {
+            display: flex;
+            padding-left: 120px;
+            padding-top: 0px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: linear-gradient(rgb(255, 35, 237), #f8df1d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .range {
+            height: 10px;
+            width: 200px;
+            padding-left: 10px;
+            position: absolute;
+            top: 10px;
+            left: 240px;
+            -webkit-appearance: none;
+            border-radius: 30px;
+            outline: none;
+            background-image: linear-gradient(rgb(35, 39, 255), #00f3fc);
+            box-shadow: 3px 3px 3px gray;
+
+        }
+
+        .pro {
+            height: 140vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(130, 255, 157), rgba(239, 255, 137, 0.333), rgb(155, 242, 247));
+
+
+
+        }
+
+        .h2 {
+            font-size: 45px;
+            font-family: 'Borel', cursive;
+            position: relative;
+            margin-left: 680px;
+            top: 20px;
+        }
+
+        .pro1 {
+            height: 500px;
+            width: 700px;
+            margin-top: 30px;
+            margin-left: 400px;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .button {
+            height: 20px;
+            width: 100px;
+            font-family: 'Borel', cursive;
+            font-size: 12px;
+            background-image: linear-gradient(to right, rgb(0, 255, 251), rgb(251, 251, 146));
+
+        }
+
+        .button:hover {
+            height: 30px;
+            width: 150px;
+            box-shadow: 10px 10px 10px rgb(246, 8, 254);
+        }
+
+        .cont a {
+            text-decoration: none;
+        }
+
+        .cont {
+            height: 450px;
+            width: 450px;
+            margin-left: 600px;
+            margin-top: -140px;
+            /* align-items: center;
+            text-align: center; */
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        .cont h2 {
+            font-size: 45px;
+            font-family: 'Borel', cursive;
+
+        }
+
+        .cont img {
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+
+
+        <!-- home starts -->
+        <div class="home">
+            <nav>
+                <a href="#ab">About</a>
+                <a href="#pro">Project</a>
+                <a href="#cont">Contact</a>
+            </nav>
+            <div class="box2"></div>
+            <div class="box1"></div>
+            <div class="name">
+                <h1>Hi,</h1>
+                <h1> Iam name</h1>
+                <h2>Iam a Developer</h2>
+                <h2>In Xcomapany</h2>
+            </div>
+            <div class="down">
+                <a href="#ab"><img src="" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!--  home end-->
+
+    <!-- About starts -->
+    <div class="about" id="ab">
+        <h1>About me</h1>
+        <img src="your img" alt="">
+        <div class="info">
+            <p>add info here
+            </p>
+            <hr>
+        </div>
+        <Div class="skil">
+            <h2>Skills</h2>
+            <div class="container">
+                <div class="wrapper">
+                    <span>CSS</span>
+                    <div class="slider">
+                        <input type="range" class="range" id="range1" max="90">
+
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <span>HTML</span>
+                    <div class="slider">
+                        <input type="range" class="range" id="range2" min="0" max="100">
+
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <span>Python</span>
+                    <div class="slider">
+                        <input type="range" class="range" id="range3" min="0" max="100">
+
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <span>SQL</span>
+                    <div class="slider">
+                        <input type="range" class="range" id="range4" min="0" max="100">
+
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <span>Django</span>
+                    <div class="slider">
+                        <input type="range" class="range" id="range4" min="0" max="100">
+                    </div>
+                </div><br>
+                <hr>
+            </div>
+        </Div>
+    </div>
+    <!-- about ends -->
+    <div class="pro" id="pro">
+        <h2 class="h2">Project</h2>
+        <div class="pro1">
+            <label for="name">Project name:- </label>
+            <h1>OTT</h1>
+            <a href="D:\pyspiders\web tech\Html\project\index.html"><input type="button" value="view project"
+                    class="button"></a>
+            <a href="https://github.com/Matar33/OTT/blob/main/index.html"><input type="button" value="source code"
+                    class="button"></a><br><br>
+
+            <label for="name">Project name:- </label>
+            <h1>Pizza</h1>
+            <a href="D:\pyspiders\web tech\Html\task3.html"><input type="button" value="view project"
+                    class="button"></a>
+            <input type="button" value="source code" class="button"><br><br>
+
+            <label for="name">Project name:- </label> <input id="name" type="text" placeholder="Type Name"
+                class="input"><br><br>
+            <input type="button" value="view project" class="button">
+            <input type="button" value="source code" class="button"><br><br>
+
+            <label for="name">Project name:- </label> <input id="name" type="text" placeholder="Type Name"
+                class="input"><br><br>
+            <input type="button" value="view project" class="button">
+            <input type="button" value="source code" class="button"><br><br>
+            <hr>
+        </div>
+
+        <!-- end project -->
+
+        <!-- contact -->
+
+        <div class="cont" id="cont">
+            <h2>Contact</h2>
+            <img src="phone-contact.png" alt="">
+            <lable>Contact No.:</lable><a href="">no.</a><br>
+            <img src="email.png" alt="">
+            <lable>Email Id:</lable><a href="">email</a><br>
+            <img src="linkedin.png" alt="">
+            <lable>Linked in:</lable><a href=""> here add linkdin</a><br>
+            <img src="instagram.png" alt="">
+            <lable>Instagram:</lable><a href="">here add insta</a><br>
+            <img src="twitter.png" alt="">
+            <lable>Twitter:</lable><a href="">-</a><br>
+            <img src="facebook.png" alt=""><label>Facebook:</label><a href="">-</a><br>
+
+
+
+        </div>
+        <hr>
+
+    </div>
+
+
+
+</body>
+
+</html>
