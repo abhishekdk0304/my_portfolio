@@ -396,6 +396,9 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
+    #services .more{
+        display: none;
+    }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
