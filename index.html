@@ -65,10 +65,24 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>B.Tech (2019-2023)</span><br>Sri Venkateswara Engineering College, Tirupati.</li>
-                            <li><span>Intermediate</span><br>Sri Sai Krupa Junior College, Dharmavaram.</li>
-                            <li><span>Secondary School</span><br>Loyola High School, Dharmavaram.</li>
-                        </ul>
+                           
+                           
+                       
+                        <table cellspacing="15px">
+                            <tr>
+                            <td><li><span>B.Tech (2019-2023)</span><br>Sri Venkateswara Engineering College, Tirupati.   </li></td>
+                                <td><li><span>77%</span></li></td>
+                            </tr>
+                            <tr>
+                                <td> <li><span>Intermediate</span><br>Sri Sai Krupa Junior College, Dharmavaram.</li></td>
+                                <td><li><span>85%</span></li></td>
+                            </tr>
+                            <tr>
+                                <td> <li><span>Secondary School</span><br>Loyola High School, Dharmavaram.</li></td>
+                                <td><li><span>76%</span></li></td>
+                            </tr>
+                        </table>
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -84,21 +98,21 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Frontend Web Development</h2>
-                    <p>I provide custom front-end solutions for web development, optimizing user interfaces and enhancing user experiences with responsive and visually appealing designs. My expertise includes HTML, CSS, and JavaScript to create interactive and dynamic websites.</p>
-                    <a href="#">Learn more</a>
+                    <p>I provide custom front-end solutions for web development, optimizing user interfaces and enhancing user experiences with responsive<span id="dots1">...</span><span id="more1" class="more"> and visually appealing designs.My expertise includes HTML, CSS, and JavaScript to create interactive and dynamic websites.</span></p>
+                    <button onclick="myFunction(1)" id="myBtn1">Read more</button>
                     
                 </div>
                 <div>
                     <i class="fa-solid fa-server"></i>
                     <h2>Backend Web Development</h2>
-                    <p>I offer robust back-end solutions, leveraging server-side technologies to manage databases, handle business logic, and ensure seamless functionality, ensuring efficient and secure data processing for web applications. My proficiency includes server scripting languages and database management systems.</p>
-                    <a href="#">Learn more</a>
+                    <p>I offer robust back-end solutions, leveraging server-side technologies to manage databases, handle business logic, and ensure seamless functionality,<span id="dots2">...</span><span id="more2" class="more">ensuring efficient and secure data processing for web applications. My proficiency includes server scripting languages and database management systems.</span></p>
+                    <button onclick="myFunction(2)" id="myBtn2">Read more</button>
                 </div>
                 <div>
                     <i class="fa-solid fa-layer-group"></i>
                     <h2>Full Stack Web Development</h2>
-                    <p>I deliver end-to-end full-stack solutions, seamlessly integrating front-end and back-end technologies to create comprehensive web applications. My expertise spans from crafting intuitive user interfaces to implementing robust server-side logic, ensuring a cohesive and dynamic user experience.</p>
-                    <a href="#">Learn more</a>
+                    <p>I deliver end-to-end full-stack solutions, seamlessly integrating front-end and back-end technologies to create comprehensive web applications.<span id="dots3">...</span><span id="more3" class="more"> My expertise spans from crafting intuitive user interfaces to implementing robust server-side logic, ensuring a cohesive and dynamic user experience.</span></p>
+                    <button onclick="myFunction(3)" id="myBtn3">Read more</button>
 
                 </div>
             </div>
@@ -149,7 +163,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><a href="mailto:abhishekdevangakotha@gmail.com"></a>abhishekdevangakotha@gmail.com</p>
+                <p><a href="mailto:abhishekdevangakotha@gmail.com"><i class="fa-solid fa-envelope"></i></a>abhishekdevangakotha@gmail.com</p>
                 <p><a href="tel:6303345712"><i class="fa-solid fa-square-phone"></i></a>+91 6303345712</p>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -157,7 +171,7 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/resume_abhishek.pdf" download class="btn btn2">Download Resume</a>
+                <a href="images/resume_abhishek.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download Resume</a>
             </div>
             <div class="contact-right">
                 <form action="" name="submit-to-google-sheet">
@@ -178,6 +192,24 @@
     </div>
 <!-- ---------------------------footer ended-------------------------------- -->
 </div>
+<script>
+    function myFunction(n) {
+
+      var dots = document.getElementById("dots"+n);
+      var moreText = document.getElementById("more"+n);
+      var btnText = document.getElementById("myBtn"+n);
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
